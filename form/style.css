@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+:root {
+    --c1 : #371B58;
+    --c2 : #4C3575;
+    --c3 : #5B4B8A;
+    --c4 : #7858A6;
+}
+
+* {
+    font-family: Lexend, 'Courier New', Courier, monospace;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--c1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c3);
+    width: 75%;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+/* form {
+    width: 80%;
+} */
+
+form label { 
+    font-size: 1.25em;
+}
+
+.form {
+    width: 90%;
+    background-color: var(--c2);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+input[type=text], textarea, input[type=email], input[type=submit]{
+    width: 100%;
+    font-size: 1.25em;
+    border-radius: 10px;
+    padding: 1%;
+    resize: none;
+}
+
+.submit_btn {
+    background-color: var(--c3);
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    background-color: var(--c1);
+    color: whitesmoke;
+}
+
+.input-error{
+    outline: 3px solid red;
+}
+
+input[type=text]:not(:placeholder-shown) {  
+    border-color: hsl(0, 76%, 50%);
+}
